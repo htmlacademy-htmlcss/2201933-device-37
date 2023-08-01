@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <!-- header-->
@@ -41,67 +42,68 @@
         <!-- Меню каталог с выпадающим подменю-->
         <ul class="navigation-menu">
           <li class="navigation-menu-item has-submenu">
-            <a href="catalog.html" aria-current="page">Каталог товаров</a>
+            <a class="navigation-menu-link" href="catalog.html">Каталог товаров</a>
             <ul class="submenu">
               <li class="submenu-item">
-                Виртуальная реальность
+                <a class="submenu-link" href="#">
+                  Виртуальная реальность
+                </a>
               </li>
               <li class="submenu-item">
-                Моноподы для cелфи
+                <a class="submenu-link" href="#">Моноподы для cелфи</a>
               </li>
               <li class="submenu-item">
-                Экшн-камеры
+                <a class="submenu-link" href="#">Экшн-камеры</a>
               </li>
               <li class="submenu-item">
-                Фитнес-браслеты
+                <a class="submenu-link" href="#">Фитнес-браслеты</a>
               </li>
               <li class="submenu-item">
-                Умные часы
+                <a class="submenu-link" href="#">Умные часы</a>
               </li>
               <li class="submenu-item">
-                Квадрокоптеры
+                <a class="submenu-link" href="#">Квадрокоптеры</a>
               </li>
             </ul>
           </li>
           <li class="navigation-menu-item">
-            Доставка
+            <a class="navigation-menu-link" href="#">Доставка</a>
           </li>
           <li class="navigation-menu-item">
-            Гарантия
+            <a class="navigation-menu-link" href="#">Гарантия</a>
           </li>
           <li class="navigation-menu-item">
-            Контакты
+            <a class="navigation-menu-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
     </header>
     <!-- Основное содержимое-->
     <main class="main-inner">
-      <h1 class="inner-header-title">
+      <h1 class="inner-header-title title">
         Моноподы для селфи
       </h1>
-      <section class="inner-header">
+
         <!-- Хлебные крошки-->
-        <ol class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
-              <p class="">
-                Главная
-              </p>
-            </a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link"  href="catalog.html">
-              Каталог товаров
-            </a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">
-              Моноподы для селфи
-            </a>
-          </li>
-        </ol>
-      </section>
+      <ol class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">
+            <p class="">
+              Главная
+            </p>
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link"  href="catalog.html">
+            Каталог товаров
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">
+            Моноподы для селфи
+          </a>
+        </li>
+      </ol>
 
       <!-- Фильтр-->
       <section class="filter">
@@ -110,13 +112,13 @@
         </h2>
         <form class="filter-catalog" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="filter-catalog-group filter-cost">
-            <legend class="price">
+            <legend class="legend-name price">
               Стоимость
             </legend>
             <div class="range">
               <div class="range-wrapper-inputs">
                 <label class="range-label">
-                  <span class="price-text ">от</span>
+                  <span class="price-text">от</span>
                   <input class="range-input input-price-from" type="number" name="price-from" value="0">
                 </label>
 
@@ -145,7 +147,7 @@
           </fieldset>
 
           <fieldset class="filter-catalog-group">
-            <legend class="filter-catalog-title">
+            <legend class="legend-name color-title">
               Цвет:
             </legend>
             <ul class="filter-catalog-list">
@@ -198,7 +200,7 @@
           </fieldset>
 
           <fieldset class="filter-catalog-group">
-            <legend class="filter-catalog-title">
+            <legend class="legend-name bluetooth-title">
               Bluetooth
             </legend>
             <ul class="filter-catalog-list">
@@ -223,7 +225,7 @@
             </ul>
           </fieldset>
 
-          <button class="button-submit button" type="submit">
+          <button class="button-submit" type="submit">
             Показать
           </button>
         </form>
@@ -231,7 +233,7 @@
 
       <!-- Сортировка-->
       <section class="sorting">
-        <h2>
+        <h2 class="sorting-title">
           сортировка:
         </h2>
 
@@ -295,15 +297,15 @@
           </li>
         </ul>
 
-        <a class="download-link" href="#">
+        <a class="download-butter" href="#">
           Загрузить ещё
         </a>
 
         <!-- ПАГИНАЦИЯ-->
         <ul class="catalog-pagination">
           <li class="catalog-pagination-item">
-            <a class="catalog-pagination-link pagination-prev pagination-disabled">
-              <span class="catalog-pagination-name">Назад</span>
+            <a class="catalog-pagination-link catalog-pagination-name pagination-prev pagination-disabled">
+              Назад
             </a>
           </li>
           <li class="pagination-item">
@@ -332,19 +334,19 @@
             </a>
           </li>
           <li class="catalog-pagination-item">
-            <a class="catalog-pagination-link pagination-next" href="#">
-              <span class="catalog-pagination-name">Вперёд</span>
+            <a class="catalog-pagination-link catalog-pagination-name pagination-next" href="#">
+              Вперёд
             </a>
           </li>
         </ul>
       </section>
-      </section>
-
-
     </main>
     <!-- Подвал-->
     <footer class="page-footer">
       <section class="footer-contacts">
+        <h2 class="visually-hidden">
+          Контакты
+        </h2>
         <address class="footer-contacts-address">
           <a class="logo" href="index.html">
             <img class="logo-footer" src="images/logo-footer.svg" width="145" height="36" alt="Логотип сайта Девайс.">
@@ -356,6 +358,9 @@
       </section>
 
       <section class="footer-menu">
+        <h2 class="visually-hidden">
+          Навигация меню
+        </h2>
         <ul class="footer-menu-list">
           <li class="footer-menu-item">
             <a href="">Доставка</a>
@@ -370,6 +375,9 @@
       </section>
 
       <section class="footer-phone">
+        <h2 class="visually-hidden">
+          Телефон
+        </h2>
       <a class="footer-contacts-phone" href="tel:+78128121212">
         Тел.: +7 (812) 812-12-12
       </a>
@@ -377,7 +385,6 @@
 
     <ul class="social-list">
       <li class="social-item">
-
         <a class="social-link" href="https://t.me/htmlacademy">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
             <g clip-path="url(#clip0_19415_1305)">
