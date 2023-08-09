@@ -8,7 +8,7 @@
   <body>
     <!-- header-->
     <header class="page-header">
-      <div class="page-container">
+      <div class="page-container header-container">
         <!-- Logo-->
         <a class="logo" href="index.html">
           <img class="logo" src="images/index/logo.svg" width="145" height="36" alt="Логотип сайта Девайс.">
@@ -25,18 +25,18 @@
         </form>
         <!-- навигаци по сайту верхняя-->
         <ul class="personal-list">
-            <li class="personal-item">
-              <span>Коля Петухов</span>
-              <a class="personal-link" href="#">Выйти</a>
+            <li class="personal-item personal-login">
+              <a class="personal-user-link login-link">Коля Петухов</a>
+              <a class="personal-link logout-link" href="#">Выйти</a>
             </li>
-            <li class="personal-item">
-              <a class="personal-link" href="#">Сравнить</a>
+            <li class="personal-item personal-compare">
+              <a class="personal-link compare-link" href="#">Сравнить</a>
             </li>
-            <li class="personal-item">
+            <li class="personal-item personal-basket">
               <span class="baskets">
                 2
               </span>
-              <a class="personal-link" href="#">Корзина</a>
+              <a class="personal-link basket-link" href="#">Корзина</a>
             </li>
         </ul>
         <!-- Основная навигация с выпадающим подменю-->
@@ -110,7 +110,7 @@
       </header>
       <!-- Фильтр-->
       <section class="catalog-products">
-        <div class="page-container">
+        <div class="page-container catalog-products-container">
           <h2 class="visually-hidden">
             Список товаров с фильтрами.
           </h2>
@@ -235,9 +235,8 @@
               Показать
             </button>
           </form>
-
+          <!-- Сортировка-->
           <div class="catalog-right-column">
-            <!-- Сортировка-->
             <div class="sorting-container">
               <h3 class="sorting-title">
                 сортировка:
@@ -322,7 +321,7 @@
                     Назад
                   </a>
                 </li>
-                <li class="pagination-item">
+                <li class="catalog-pagination-item">
                   <a class="catalog-pagination-link catalog-pagination-link-current">
                     1
                   </a>
@@ -386,21 +385,21 @@
           </ul>
           <ul class="social-list">
             <li class="social-item">
-              <a class="social-link" href="https://t.me/htmlacademy">
+              <a class="social-link social-link-telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">
                   Телеграм.
                 </span>
               </a>
             </li>
             <li class="social-item">
-              <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">
                   Youtube
                 </span>
               </a>
             </li>
             <li class="social-item">
-              <a class="social-link" href="https://twitter.com/htmlacademy_ru">
+              <a class="social-link social-link-twitter" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">
                   Twitter.
                 </span>
