@@ -43,7 +43,7 @@
           <ul class="navigation-menu">
             <li class="navigation-menu-item has-submenu">
               <a class="navigation-menu-link has-submenu-link" href="#">Каталог товаров</a>
-              <ul class="submenu">
+              <ul class="submenu submenu-none">
                 <li class="submenu-item">
                   <a class="submenu-link" href="#">
                     Виртуальная реальность
@@ -87,13 +87,13 @@
       </h1>
       <!-- Слайдер-->
       <section class="slider">
-        <div class="page-container">
+        <div class="page-container slider-container">
           <h2 class="visually-hidden">
             Популярные товары.
           </h2>
 
           <ol class="slider-list">
-            <li class="slider-item slider-item-current">
+            <li class="slider-item slider-item-active">
               <div class="slider-image-wrapper">
                 <img class="slider-image" src="images/index/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
                 <div class="slider-button-wrapper">
@@ -235,7 +235,7 @@
           <!-- Пагинация-->
           <ol class="slider-pagination">
             <li>
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <button class="slider-pagination-button slider-pagination-button-active" type="button">
                 <span class="visually-hidden">1 слайд.</span>
               </button>
             </li>
@@ -299,20 +299,20 @@
             Сервисы.
           </h2>
 
-          <ul class="services-list">
-            <li class="services-item services-current">
-              Доставка
+          <ol class="services-list">
+            <li class="services-item services-active">
+              <button class="services-button services-button-active" type="button">Доставка</button>
             </li>
             <li class="services-item">
-              Гарантия
+              <button class="services-button" type="button">Гарантия</button>
             </li>
             <li class="services-item">
-              Кредит
+              <button class="services-button" type="button">Кредит</button>
             </li>
-          </ul>
+          </ol>
 
-          <ul class="services-description">
-            <li class="services-description-item services-delivery services-description-current">
+          <ol class="services-description">
+            <li class="services-description-item services-delivery services-description-active">
               <h3 class="services-title title">
                 Доставка
               </h3>
@@ -336,7 +336,7 @@
                 Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
               </p>
             </li>
-          </ul>
+          </ol>
         </div>
       </section>
 
