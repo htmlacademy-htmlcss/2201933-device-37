@@ -32,10 +32,12 @@
             <a class="personal-link compare-link" href="#">Сравнить</a>
           </li>
           <li class="personal-item personal-basket">
-            <span class="baskets">
-              2
-            </span>
-            <a class="personal-link basket-link" href="#">Корзина</a>
+            <a class="personal-link basket-link" href="#">
+              <span class="baskets">
+                2
+              </span>
+              Корзина
+            </a>
           </li>
         </ul>
         <!-- Основная навигация с выпадающим подменю-->
@@ -43,7 +45,12 @@
           <ul class="navigation-menu">
             <li class="navigation-menu-item has-submenu">
               <a class="navigation-menu-link has-submenu-link" href="#">Каталог товаров</a>
-              <ul class="submenu submenu-none">
+              <button class="navigation-menu-item-button" type="button">
+                <span class="visually-hidden">
+                  Открыть подменю.
+                </span>
+              </button>
+              <ul class="submenu">
                 <li class="submenu-item">
                   <a class="submenu-link" href="#">
                     Виртуальная реальность

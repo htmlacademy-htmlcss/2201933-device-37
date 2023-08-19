@@ -26,24 +26,31 @@
         <!-- навигаци по сайту верхняя-->
         <ul class="personal-list">
             <li class="personal-item personal-login">
-              <a class="personal-user-link login-link">Коля Петухов</a>
+              <a class="personal-link login-link" href="#">Коля Петухов</a>
               <a class="personal-link logout-link" href="#">Выйти</a>
             </li>
             <li class="personal-item personal-compare">
               <a class="personal-link compare-link" href="#">Сравнить</a>
             </li>
             <li class="personal-item personal-basket">
-              <span class="baskets">
-                2
-              </span>
-              <a class="personal-link basket-link" href="#">Корзина</a>
+              <a class="personal-link basket-link" href="#">
+                <span class="baskets">
+                  2
+                </span>
+                Корзина
+              </a>
             </li>
         </ul>
         <!-- Основная навигация с выпадающим подменю-->
         <nav class="navigation">
           <ul class="navigation-menu">
             <li class="navigation-menu-item has-submenu">
-              <a class="navigation-menu-link" href="catalog.html">Каталог товаров</a>
+              <a class="navigation-menu-link has-submenu-link" href="#">Каталог товаров</a>
+              <button class="navigation-menu-item-button" type="button">
+                <span class="visually-hidden">
+                  Открыть подменю.
+                </span>
+              </button>
               <ul class="submenu">
                 <li class="submenu-item">
                   <a class="submenu-link" href="#">
@@ -123,21 +130,8 @@
                 Стоимость
               </legend>
               <div class="range">
-                <div class="range-wrapper-inputs">
-                  <label class="range-label">
-                    <span class="price-text">от</span>
-                    <input class="range-input input-price-from" type="number" name="price-from" value="0">
-                  </label>
-
-                  <label class="range-label">
-                    <span class="price-text">
-                      до
-                    </span>
-                    <input class="range-input input-price-up" type="number" name="price-up" value="5000">
-                  </label>
-                </div>
                 <div class="range-scale">
-                  <div class="range-bar" style="left: 0; width: 220px;">
+                  <div class="range-bar" style="left: 0; width: 119px;">
                     <button class="range-toggle-button range-min" type="button">
                       <span class="visually-hidden">
                         Изменить минимальную цену.
@@ -151,8 +145,16 @@
                   </div>
                 </div>
               </div>
-            </fieldset>
+              <div class="range-wrapper-inputs">
+                <label class="range-label">
+                  <input class="range-input input-price-from" type="text" name="price-from" placeholder="от 0">
+                </label>
 
+                <label class="range-label">
+                  <input class="range-input input-price-up" type="text" name="price-up" placeholder="до 5000">
+                </label>
+              </div>
+            </fieldset>
             <fieldset class="filter-catalog-group">
               <legend class="legend-name color-title">
                 Цвет:
@@ -231,7 +233,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button-submit" type="submit">
+            <button class="button-submit button" type="submit">
               Показать
             </button>
           </form>
@@ -281,6 +283,7 @@
                       <p class="product-price">500 ₽</p>
                     </div>
                   </a>
+                  <a class="product-about-info">Подробнее</a>
                 </li>
                 <li class="product-card has-new">
                   <a class="product-link" href="#">
@@ -290,6 +293,7 @@
                       <p class="product-price">1 500 ₽</p>
                      </div>
                   </a>
+                  <a class="product-about-info">Подробнее</a>
                 </li>
                 <li class="product-card">
                   <a class="product-link" href="#">
@@ -299,6 +303,7 @@
                       <p class="product-price">2 500 ₽</p>
                     </div>
                   </a>
+                  <a class="product-about-info">Подробнее</a>
                 </li>
                 <li class="product-card">
                   <a class="product-link" href="#">
@@ -308,6 +313,7 @@
                       <p class="product-price">500 ₽</p>
                     </div>
                   </a>
+                  <a class="product-about-info">Подробнее</a>
                 </li>
               </ul>
               <a class="download-button" href="#">
