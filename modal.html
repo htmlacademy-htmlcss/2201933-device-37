@@ -38,45 +38,6 @@
               </span>
               Корзина
             </a>
-             <!-- Popover -->
-             <div class="popover popover-cart">
-              <div class="popover-content">
-                <h2 class="visually-hidden">Корзина</h2>
-                <ul class="cart-items-list list-reset">
-                  <li class="cart-item">
-                    <a class="cart-link" href="#">
-                      <img class="cart-image" src="images/catalog/basket-amateur.jpg"
-                        alt="Любительская селфи-палка." width="39" height="43">
-                      <h3 class="cart-name">Любительская селфи-палка</h3>
-                    </a>
-                    <button class="cart-button">
-                      <span class="visually-hidden">Удалить из корзины.</span>
-                    </button>
-                  </li>
-                  <li class="cart-item">
-                    <a class="cart-link" href="#">
-                      <img class="cart-image" src="images/catalog/basket-professional.jpg"
-                        alt="Профессиональная селфи-палка." width="39" height="43">
-                      <h3 class="cart-name">Профессиональная селфи-палка</h3>
-                    </a>
-                    <button class="cart-button">
-                      <span class="visually-hidden">Удалить из корзины.</span>
-                    </button>
-                  </li>
-                </ul>
-                <div class="cart-wrapper">
-                  <p class="cart-text">
-                    Товаров:
-                    <span class="cart-count">2</span>
-                  </p>
-                  <p class="cart-text">
-                    Сумма:
-                    <span class="cart-price">2000 ₽</span>
-                  </p>
-                </div>
-                <a class="popover-open-button" href="#">Открыть корзину</a>
-              </div>
-            </div>
           </li>
         </ul>
         <!-- Основная навигация с выпадающим подменю-->
@@ -571,5 +532,64 @@
         </div>
       </div>
     </footer>
+
+  <div class="modal-container">
+    <div class="modal modal-delivery">
+      <section class="modal-content">
+        <h2 class="modal-title title">
+          Доставка под заказ
+        </h2>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть модальное окно.</span>
+        </button>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="modal-group">
+            <label class="modal-label" for="name">
+              Ваше имя:
+            </label>
+            <input class="modal-input modal-input-name" type="text" id="name" name="name" placeholder="Введите имя">
+            <span class="modal-help">Добавьте имя</span>
+          </fieldset>
+          <fieldset class="modal-group">
+            <label class="modal-label" for="email">
+              Ваш e-mail:
+            </label>
+            <input class="modal-input modal-input-email modal-input-name-invalid" type="email" id="email" name="e-mail"
+              placeholder="Введите e-mail" value="почта" required>
+            <span class="modal-help modal-error">Забавный у вас адрес</span>
+          </fieldset>
+          <fieldset class="modal-group">
+            <label class="modal-label" for="delivery">
+              Что нужно привезти:
+            </label>
+            <input class="modal-input modal-input-delivery" type="text" id="delivery" name="delivery"
+              placeholder="В свободной форме">
+          </fieldset>
+          <fieldset class="modal-group">
+            <div class="tooltip-container">
+              <label class="modal-label modal-label-tooltip" for="quantity">Количество:</label>
+              <div class="tooltip">
+                <button class="tooltip-button" type="button"></button>
+                <span class="tooltip-text">
+                  Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+                </span>
+              </div>
+            </div>
+            <div class="quantity-container">
+              <button class="quantity-button min-button">
+                <span class="visually-hidden">Уменьшить.</span>
+              </button>
+              <input class="modal-input quantity-input" type="text" id="quantity" name="quantity" min="0"
+                value="1">
+              <button class="quantity-button max-button">
+                <span class="visually-hidden">Увеличить.</span>
+              </button>
+            </div>
+          </fieldset>
+          <button class="send-button button" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
+  </div>
   </body>
 </html>
