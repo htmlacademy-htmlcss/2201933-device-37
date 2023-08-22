@@ -62,7 +62,7 @@ body {
   overflow: hidden;
 }
 
-/* Кнопки*/
+/* Button */
 
 .button {
   display: flex;
@@ -84,7 +84,7 @@ body {
   cursor: pointer;
 }
 
-/* Titles*/
+/* Titles */
 
 .title {
   font-family: "Raleway", sans-serif;
@@ -94,7 +94,7 @@ body {
   color: #000000;
 }
 
-/*Header*/
+/* Header */
 
 .page-container {
   width: 1160px;
@@ -582,13 +582,13 @@ body {
   text-decoration: none;
 }
 
-/* main */
+/* Main */
 
  .main-container {
   flex-grow: 1;
 }
 
-/* Слайдер */
+/* Slider */
 
 .slider {
   margin-bottom: 70px;
@@ -775,7 +775,7 @@ body {
   line-height: 30px;
 }
 
-/* Пагинация к слайду */
+/* Slider-pagination */
 
 .slider-pagination {
   display: flex;
@@ -811,7 +811,7 @@ body {
   opacity: 0.3;
 }
 
-/* Основной каталог */
+/* Catalog-main */
 
 .catalog-main-list {
   display: flex;
@@ -885,7 +885,7 @@ body {
   background-image: url("../images/index/catalog-quadcopter.svg");
 }
 
-/* Услуги */
+/* Services */
 
 .services {
   margin-bottom: 70px;
@@ -1025,7 +1025,7 @@ body {
   padding-right: 242px;
 }
 
-/* Доставка под заказ */
+/* Delivery */
 
 .delivery {
   margin-bottom: 70px;
@@ -1072,7 +1072,7 @@ body {
   background-position: center;
   opacity: 0.5;
 }
-/* opacity=".3"*/
+
 .delivery-button:focus {
   outline: 2px solid #AF4FFF;
 }
@@ -1093,7 +1093,7 @@ body {
   background-color: #FFE17F;
 }
 
-/* information */
+/* Information */
 
 .information {
   margin-bottom: 70px;
@@ -1214,7 +1214,7 @@ body {
 }
 
 
-/* contacts */
+/* Contacts */
 
 .contacts {
   width: 532px;
@@ -1311,7 +1311,7 @@ body {
   opacity: 0.3;
 }
 
-/* subscribe */
+/* Subscribe */
 
 .subscribe {
   background-color: #F0F0F0;
@@ -1411,15 +1411,13 @@ body {
 
 .subscribe-note::before {
   content: "";
-  /*top: 50%;
-  left: -32px;*/
   background-image: url(../images/index/tick-big.svg);
   background-repeat: no-repeat;
   width: 16px;
   height: 16px;
 }
 
-/* Подвал */
+/* Footer */
 
 .page-footer {
   background-color: #444444;
@@ -1665,11 +1663,11 @@ body {
   display: flex;
 }
 
-/* Фильтр */
+/* Filter */
 
 .filter-catalog {
   width: 320px;
-  padding: 0 40px 25px 60px; /* top был25px*/
+  padding: 0 40px 25px 60px;
 }
 
 .filter-title {
@@ -1818,12 +1816,6 @@ body {
   padding-left: 36px;
   cursor: pointer;
 }
-/*.control {
-может быть флекс
-    display: flex;
-    align-items: center;
-}
-*/
 
 .control:hover {
   opacity: 0.6;
@@ -1876,11 +1868,6 @@ body {
   border-radius: 50%;
   background-color: #000000;
 }
-
-/*.control-mark:focus {
-  outline-offset: 2px;
-  outline: 2px solid #af4fff;
-}*/
 
 .control-label {
   font-size: 16px;
@@ -1954,7 +1941,7 @@ body {
   margin-right: 206px;
 }
 
-.select-control {/*right 9px center;*/
+.select-control {
   min-width: 139px;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
@@ -2020,7 +2007,7 @@ body {
   transform: rotate(180deg);
 }
 
-/* Список товаров */
+/* Catalog main */
 
 .catalog-container {
   padding: 70px 40px 78px 40px;
@@ -2177,7 +2164,7 @@ body {
   opacity: 0.3;
 }
 
-/* ПАГИНАЦИЯ */
+/* Pagination */
 
 .catalog-pagination {
   display: flex;
