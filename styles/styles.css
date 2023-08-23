@@ -42,7 +42,7 @@ body {
   min-height: 100%;
   margin: 0 auto;
   padding: 0;
-  min-width: 1440px;
+  /*min-width: 1440px;*/
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -104,9 +104,9 @@ body {
 .header-container {
   display: grid;
   grid-template-columns: 517px 1fr;
-  row-gap: 30px;
+  gap: 30px 26px;
   padding: 20px 60px 0 60px;
-  background-image: linear-gradient( to bottom, #ffffff 22%, #FFE17F 22%);
+  background-image: linear-gradient( to bottom, #ffffff 20%, #FFE17F 20%, #ffe17f 77%);
 }
 
 .logo {
@@ -129,24 +129,24 @@ body {
 
 .search-form {
   display: flex;
-  margin-right: 26px;
 }
 
 .search-input {
   width: 359px;
   max-height: 40px;
-  padding: 10px 10px 10px 48px;
+  padding: 10px 16px 10px 48px;
   border-radius: 50px 0 0 50px;
   border: 2px solid #000000;
   border-right: none;
   background-color: transparent;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
   background-image: url("../images/index/search.svg");
   background-repeat: no-repeat;
   background-position: left;
-  background-position-x: 16px;
+  background-position-x: 15px;
 }
 
 .search-input:focus {
@@ -158,7 +158,7 @@ body {
 }
 
 .search-button {
-  width: 158px;
+  width: 160px;
   max-height: 40px;
   padding: 0;
   border-radius: 0 50px 50px 0;
@@ -188,7 +188,6 @@ body {
 .search-button:disabled {
   opacity: 0.3;
 }
-
 
 .personal-list {
   display: flex;
@@ -247,7 +246,7 @@ body {
 
 .personal-compare {
   min-width: 105px;
-  margin-right: 18px;
+  margin-right: -10px;
 }
 
 .compare-link {
@@ -261,12 +260,13 @@ body {
   padding-left: 28px;
   background-image: url("../images/index/basket.svg");
   background-repeat: no-repeat;
-  background-position-y: 5px;
-  background-position-x: 42px;
+  background-position-y: 7px;
+  background-position-x: 43px;
 }
 
 .baskets {
   position: relative;
+  top: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -449,9 +449,11 @@ body {
 
 .navigation-menu {
   display: flex;
-  gap: 45px;
+  align-items: center;
+  gap: 44px;
   margin: 0;
   padding: 0;
+  padding-top: 2px;
   list-style: none;
 }
 
@@ -482,8 +484,7 @@ body {
 
 .navigation-menu-item-button {
   position: relative;
-  top: -7px;
-  right: 41px;
+  right: 44px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -591,7 +592,7 @@ body {
 /* Slider */
 
 .slider {
-  margin-bottom: 70px;
+  margin-bottom: 67px;
 }
 
 .slider-container {
@@ -622,13 +623,14 @@ body {
   max-width: 100%;
   height: auto;
   object-fit: contain;
+  margin-top: -3%;
 }
 
 .slider-button-wrapper {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 211px;
+  top: 193px;
   padding-left: 30px;
   width: 100%;
 }
@@ -667,7 +669,7 @@ body {
   position: relative;
   z-index: 1;
   margin: 0;
-  margin-top: 107px;
+  margin-top: 104px;
   margin-bottom: 29px;
 }
 
@@ -681,7 +683,7 @@ body {
   content: "";
   width: 250px;
   height: 135px;
-  top: 76px;
+  top: 65px;
   right: 49px;
   color: #FFFFFF;
   text-align: right;
@@ -711,7 +713,7 @@ body {
 
 .slider-link {
   width: 220px;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
 }
 
 .slider-link:hover {
@@ -766,7 +768,6 @@ body {
   font-size: 36px;
   line-height: 30px;
   color: #000000;
-
 }
 
 .slider-info-property {
@@ -779,10 +780,11 @@ body {
 
 .slider-pagination {
   display: flex;
+  margin-top: -37px;
+  margin-left: -39px;
   list-style: none;
   justify-content: center;
   gap: 20px;
-
 }
 
 .slider-pagination-button {
@@ -813,12 +815,15 @@ body {
 
 /* Catalog-main */
 
+.catalog-main {
+  margin-bottom: 70px;
+}
+
 .catalog-main-list {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   margin: 0;
-  margin-bottom: 70px;
   padding: 0;
   list-style: none;
 }
@@ -888,9 +893,11 @@ body {
 /* Services */
 
 .services {
+  padding-top: 13px;
+  padding-bottom: 70px;
   margin-bottom: 70px;
   background-color: #F0F0F0;
-  background-image: linear-gradient( to bottom, #FFFFFF 34%, #F0F0F0 34%);
+  background-image: linear-gradient( to bottom, #FFFFFF 29%, #F0F0F0 29%);
 }
 
 .services-container {
@@ -903,7 +910,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 35px;
+  gap: 33px;
   margin: 0;
   margin-right: 116px;
   padding: 64px 0;
@@ -921,7 +928,6 @@ body {
 
 .services-item {
   width: 287px;
-  padding: 10px;
 }
 
 .services-active {
@@ -933,6 +939,7 @@ body {
   width: 160px;
   position: relative;
   z-index: 1;
+  padding-left: 10px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -997,7 +1004,7 @@ body {
   display: none;
   width: 694px;
   background-repeat: no-repeat;
-  background-position: center right 63px;
+  background-position: center right;
 }
 
 .services-description-active {
@@ -1017,12 +1024,15 @@ body {
   background-image: url("../images/index/credit.svg");
 }
 
-.search-title {
+.services-title {
+  margin: 0;
   margin-bottom: 34px;
+
 }
 
 .services-text {
   padding-right: 242px;
+  margin: 0;
 }
 
 /* Delivery */
@@ -1032,11 +1042,10 @@ body {
 }
 
 .delivery-button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
   width: 1160px;
-  padding: 0;
+  min-height: 100px;
+  padding: 7px 0 0 5px;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 800;
@@ -1052,6 +1061,9 @@ body {
 
 .delivery-button::before {
   content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 125px;
   height: 100px;
   background-color: #FFE17F;
@@ -1062,9 +1074,11 @@ body {
 
 .delivery-button::after {
   content: "";
+  position: absolute;
+  top: 32px;
+  right: 42px;
   width: 40px;
   height: 40px;
-  margin-right: 42.5px;
   border-radius: 50%;
   background-color: #DCDCDC;
   background-image: url("../images/index/i.svg");
@@ -1105,14 +1119,24 @@ body {
 }
 
 .about {
+  position: relative;
   width: 520px;
-  padding-top: 47px;
+  padding-top: 49px;
   padding-bottom: 52px;
 }
 
 .about-title {
   margin: 0;
   margin-bottom: 48px;
+}
+
+.about-title::before {
+  position: absolute;
+  content: "";
+  top: 2px;
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
 }
 
 .about-text {
@@ -1217,13 +1241,23 @@ body {
 /* Contacts */
 
 .contacts {
+  position: relative;
   width: 532px;
-  padding-top: 47px;
+  padding-top: 49px;
 }
 
 .contacts-title {
   margin: 0;
   margin-bottom: 48px;
+}
+
+.contacts-title::before {
+  position: absolute;
+  content: "";
+  top: 2px;
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
 }
 
 .contacts-text {
