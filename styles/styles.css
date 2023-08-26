@@ -263,11 +263,11 @@ body {
 }
 
 .basket-link {
-  padding-left: 28px;
+  margin-left: 28px;
   background-image: url("../images/index/basket.svg");
   background-repeat: no-repeat;
   background-position-y: 7px;
-  background-position-x: 43px;
+  background-position-x: 15px;
 }
 
 .baskets {
@@ -468,6 +468,8 @@ body {
 }
 
 .navigation-menu-link {
+  position: relative;
+  z-index: 17;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -1616,29 +1618,53 @@ body {
 }
 
 .social-link {
-  /*display: flex;
-  justify-content: center;
-  align-items: center;*/
   display: block;
   width: 40px;
   height: 40px;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
   /*border-radius: 50%;*/
   /*background-color: rgba(255, 255, 255, 0.3);*/
 }
 
 .social-link::before {
+  display: block;
   content: "";
   width: 40px;
   height: 40px;
- /* mask-repeat: no-repeat;
-  mask-position: center;*/
-  background-color: #444444;
 }
 
 .social-link-telegram::before {
-  mask: url("../images/index/telegram.png") no-repeat center center;
+  background-color: rgba(255, 255, 255, 0.3);
+  mask: url("../images/index/telegram.svg") no-repeat center center;
+  -webkit-mask: url("../images/index/telegram.svg") no-repeat center center;
 }
 
+.social-link-youtube::before {
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-mask: url("../images/index/youtube.svg") no-repeat center center;
+  mask: url("../images/index/youtube.svg") no-repeat center center;
+}
+
+.social-link-twitter::before {
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-mask: url("../images/index/twitter.svg") no-repeat center center;
+  mask: url("../images/index/twitter.svg") no-repeat center center;
+}
+
+.social-link:hover::before {
+  background-color: rgba(255, 199, 0, 1);
+}
+
+.social-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.social-link:active::before {
+  background-color: rgba(255, 199, 0, 1);
+}
 
 
 /*.social-link::before {
@@ -1663,19 +1689,6 @@ body {
   background-repeat: no-repeat;
 }*/
 
-.social-link:hover {
-  background-color: #ffc700;
-}
-
-.social-link:focus {
-  outline: 2px solid #AF4FFF;
-  outline-offset: 2px;
-}
-
-.social-link:active::before {
-  opacity: 0.3;
-  border-radius: 50%;
-}
 
 .footer-contacts-wrapper {
   display: flex;
