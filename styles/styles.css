@@ -1616,16 +1616,32 @@ body {
 }
 
 .social-link {
-  display: flex;
+  /*display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
+  display: block;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
+  /*border-radius: 50%;*/
+  /*background-color: rgba(255, 255, 255, 0.3);*/
 }
 
 .social-link::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+ /* mask-repeat: no-repeat;
+  mask-position: center;*/
+  background-color: #444444;
+}
+
+.social-link-telegram::before {
+  mask: url("../images/index/telegram.png") no-repeat center center;
+}
+
+
+
+/*.social-link::before {
   content: "";
   width: 40px;
   height: 40px;
@@ -1645,7 +1661,7 @@ body {
 .social-link-twitter::before {
   background-image: url("../images/index/twitter.svg");
   background-repeat: no-repeat;
-}
+}*/
 
 .social-link:hover {
   background-color: #ffc700;
@@ -1658,6 +1674,7 @@ body {
 
 .social-link:active::before {
   opacity: 0.3;
+  border-radius: 50%;
 }
 
 .footer-contacts-wrapper {
