@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/index/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -89,24 +91,24 @@
                 </span>
               </button>
               <ul class="submenu">
-                <li class="submenu-item submenu-virtual">
+                <li class="submenu-item">
                   <a class="submenu-link" href="#">
                     Виртуальная реальность
                   </a>
                 </li>
-                <li class="submenu-item submenu-monopod">
+                <li class="submenu-item">
                   <a class="submenu-link" href="catalog.html">Моноподы для cелфи</a>
                 </li>
-                <li class="submenu-item submenu-camera">
+                <li class="submenu-item">
                   <a class="submenu-link" href="#">Экшн-камеры</a>
                 </li>
-                <li class="submenu-item submenu-fitness">
+                <li class="submenu-item">
                   <a class="submenu-link" href="#">Фитнес-браслеты</a>
                 </li>
-                <li class="submenu-item submenu-smart-watch">
+                <li class="submenu-item">
                   <a class="submenu-link" href="#">Умные часы</a>
                 </li>
-                <li class="submenu-item submenu-quadcopter">
+                <li class="submenu-item">
                   <a class="submenu-link" href="#">Квадрокоптеры</a>
                 </li>
               </ul>
@@ -558,5 +560,64 @@
         </div>
       </div>
     </footer>
+    <!-- modal-container-close для закрытия модального окна -->
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-delivery">
+      <section class="modal-content">
+        <h2 class="modal-title title">
+          Доставка под заказ
+        </h2>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть модальное окно.</span>
+        </button>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="modal-group">
+            <label class="modal-label" for="name">
+              Ваше имя:
+            </label>
+            <input class="modal-input modal-input-name" type="text" id="name" name="name" placeholder="Введите имя">
+            <span class="modal-help">Добавьте имя</span>
+          </fieldset>
+          <fieldset class="modal-group">
+            <label class="modal-label" for="email">
+              Ваш e-mail:
+            </label>
+            <input class="modal-input modal-input-email modal-input-name-invalid" type="email" id="email" name="e-mail"
+              placeholder="Введите e-mail" value="почта" required>
+            <span class="modal-help modal-error">Забавный у вас адрес</span>
+          </fieldset>
+          <fieldset class="modal-group">
+            <label class="modal-label" for="delivery">
+              Что нужно привезти:
+            </label>
+            <input class="modal-input modal-input-delivery" type="text" id="delivery" name="delivery"
+              placeholder="В свободной форме">
+          </fieldset>
+          <fieldset class="modal-group">
+            <div class="tooltip-container">
+              <label class="modal-label modal-label-tooltip" for="quantity">Количество:</label>
+              <div class="tooltip">
+                <button class="tooltip-button" type="button"></button>
+                <span class="tooltip-text">
+                  Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+                </span>
+              </div>
+            </div>
+            <div class="quantity-container">
+              <button class="quantity-button min-button">
+                <span class="visually-hidden">Уменьшить.</span>
+              </button>
+              <input class="modal-input quantity-input" type="text" id="quantity" name="quantity" min="0"
+                value="1">
+              <button class="quantity-button max-button">
+                <span class="visually-hidden">Увеличить.</span>
+              </button>
+            </div>
+          </fieldset>
+          <button class="send-button button" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
+  </div>
   </body>
 </html>
