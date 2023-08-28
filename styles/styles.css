@@ -544,7 +544,7 @@ body {
 
 .submenu {
   display: none;
-  grid-template-columns: 230px 194px 213px;
+  grid-template-columns: 230px 194px 213px 1fr;
   gap: 16px 21px;
   grid-auto-rows: 20px;
   padding: 8px 60px 27px 60px;
@@ -553,7 +553,7 @@ body {
   top: 51.5px;
   z-index: 10;
   width: 1160px;
-  height: 162px;
+  min-height: 162px;
   margin: 0;
   list-style: none;
   background-color: #ffe17f;
